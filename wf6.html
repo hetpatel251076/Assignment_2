@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yoga Zone</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body, html {
+            width: 100%;
+            height: 100%;
+            font-family: 'Roboto', sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* Full-screen background */
+        .background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background: url('https://storage.googleapis.com/a1aa/image/fHYVPmmqWlIoWwenhmGAbCVpoUgCM4u-7rNtZ8hjOUk.jpg') no-repeat center center;
+            background-size: cover;
+            z-index: -1;
+        }
+
+        /* Overlay */
+        .overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background-color: rgba(0, 0, 0, 0.5);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        /* Logo */
+        .logo {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            background-color: rgba(255, 255, 255, 0.7);
+            padding: 10px 20px;
+            border-radius: 50px;
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+
+        .logo a {
+            text-decoration: none;
+            color: #6b21a8;
+        }
+
+        /* Content */
+        .content {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 24px;
+            border-radius: 10px;
+            max-width: 600px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .content p {
+            color: black;
+            font-size: 1rem;
+            margin-bottom: 16px;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .content {
+                max-width: 90%;
+                padding: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="background"></div>
+    <div class="overlay">
+        <div class="logo">
+            <a href="wf3.html">YOGA</a>
+        </div>
+        <div class="content">
+            <p>
+                Yoga Zone is a multi-style yoga studio with over 300 students and three branches in Hyderabad. We practice Hatha, Power, Vinyasa, Traditional yoga and Pilates, Prenatal yoga, Aerial yoga, as well as Acro Yoga and Aerial yoga.
+            </p>
+            <p>
+                The classes here are for 1 hour each, and no two classes are ever the same! Every class deals with different elements of fitness through Yoga (cardio, strength, flexibility & balance). Different body parts are trained in each class, and the asanas vary so that the entire experience is never monotonous!
+            </p>
+            <p>
+                At Anahata, we offer you an opportunity of breathing life into your yoga practice- whether you are a beginner or a seasoned practitioner. We keep bringing varied and new styles of YOGA to the city like ACRO YOGA and AERIAL YOGA.
+            </p>
+            <p>
+                Props support staying power in a pose. Increased duration in a pose develops physical and mental stability, poise, and concentration. Patanjali calls this ‘Citta prasadanam’, or “even distribution of consciousness.”
+            </p>
+        </div>
+    </div>
+</body>
+</html>

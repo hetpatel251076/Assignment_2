@@ -1,0 +1,136 @@
+<html>
+<head>
+    <title>Yoga Classes</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <style>
+        body {
+            background-color: #f3f4f6;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+        a {
+            text-decoration: none;
+        }
+        .container {
+            position: relative;
+            width: 100%;
+            height: 100%;
+        }
+
+        .background-image {
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .content {
+            position: relative;
+            z-index: 10;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 2rem;
+        }
+
+        .logo {
+            position: absolute;
+            top: 2rem;
+            left: 2rem;
+            background-color: #d1d5db;
+            color: #6b21a8;
+            font-size: 1.875rem;
+            font-weight: bold;
+            padding: 0.5rem 1.5rem;
+            border-radius: 9999px;
+        }
+
+        .title {
+            background-color: #d1d5db;
+            color: #000;
+            font-size: 1.5rem;
+            font-weight: 600;
+            padding: 0.5rem 1.5rem;
+            border-radius: 9999px;
+            margin-top: 6rem;
+            /* Custom margin for more gap */
+        }
+
+        .classes {
+            display: flex;
+            gap: 2rem;
+        }
+
+        .class-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .class-image {
+            width: 18rem;
+            height: 24rem;
+            object-fit: cover;
+            border-radius: 0.5rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .class-title {
+            background-color: #d1d5db;
+            color: #000;
+            font-size: 1.125rem;
+            font-weight: 500;
+            padding: 0.5rem 1rem;
+            border-radius: 9999px;
+            margin-top: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img alt="Background image of a person doing yoga" class="background-image" height="1080"
+            src="https://storage.googleapis.com/a1aa/image/lx_k-hwyRqUsBZzmRgPNQgUw6APLbf1Gsj-2vtBRNNA.jpg"
+            width="1920" />
+        <div class="content">
+            <div class="logo">
+                <a href="index.html">YOGA</a>
+            </div>
+            <div class="title">
+                Classes
+            </div>
+            <div class="classes">
+                <div class="class-item">
+                    <img alt="Person doing yoga in an outdoor setting" class="class-image" height="400"
+                        src="https://storage.googleapis.com/a1aa/image/i2qQg7TSAxOmXJ6UgN8dgRuQbGP5btIa-UmOyZu29aw.jpg"
+                        width="300" />
+                    <div class="class-title">
+                        <a href="wf5.html" >Online Free Demo Class</a>
+                    </div>
+                </div>
+                <div class="class-item">
+                    <img alt="Person meditating indoors" class="class-image" height="400"
+                        src="https://storage.googleapis.com/a1aa/image/4huyNwwNWcW4h7f0d2OP6rdsSWID_Jd8i5NrcZ-Hzrg.jpg"
+                        width="300" />
+                    <div class="class-title">
+                        <a href="wf4.html">Online Personal Class</a>
+                    </div>
+                </div>
+                <div class="class-item">
+                    <img alt="Person doing yoga by the water" class="class-image" height="400"
+                        src="https://storage.googleapis.com/a1aa/image/9oCkpEd4CMNy5DOisftupCObbC8qqJEjd7qBn0J-Qsk.jpg"
+                        width="300" />
+                    <div class="class-title">
+                       <a href="wf6.html"> Online Daily Yoga Class</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,152 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yoga Sign Up</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        a {
+            text-decoration: none;
+        }
+        /* Background Image */
+        .background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url(2.jpeg); /* Replace with actual image */
+            background-size: cover;
+            background-position: center;
+            z-index: -1;
+        }
+
+        /* Overlay for Low Opacity Effect */
+        .overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.3); /* Adjust opacity */
+            z-index: -1;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            gap: 16px;
+            width: 100%;
+            max-width: 400px;
+            padding: 16px;
+            margin: auto;
+            background: rgba(255, 255, 255, 0.4); /* Slightly opaque background for visibility */
+            border-radius: 10px;
+        }
+
+        .rounded-full {
+            border-radius: 9999px;
+            padding: 12px 24px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .bg-opacity-30 {
+            background-color: rgba(255, 255, 255, 0.3);
+        }
+
+        .text-purple {
+            color: #800080;
+        }
+
+        .text-green {
+            color: #008000;
+        }
+
+        .text-black {
+            color: #000000;
+        }
+
+        .text-yellow {
+            background-color: #FFFF00;
+        }
+
+        .text-xl {
+            font-size: 1.25rem;
+            font-weight: 600;
+        }
+
+        .input-field {
+            width: 100%;
+            border: none;
+            outline: none;
+            background: transparent;
+            color: #000000;
+            font-size: 1.25rem;
+            padding: 12px 24px;
+        }
+
+        .input-container {
+            width: 100%;
+            background-color: rgba(255, 255, 255, 0.6);
+            border-radius: 9999px;
+            margin: 4px;
+            padding: 8px;
+        }
+
+        .button {
+            cursor: pointer;
+            border: none;
+            outline: none;
+            font-size: 1.25rem;
+            font-weight: 600;
+            padding: 12px;
+            border-radius: 9999px;
+            width: 100%;
+        }
+
+        .submit-button {
+            background-color: yellow;
+            color: black;
+        }
+
+        .top-left {
+            position: absolute;
+            top: 16px;
+            left: 16px;
+        }
+    </style>
+</head>
+<body>
+    <div class="background"></div>
+    <div class="overlay"></div>
+
+    <div class="top-left rounded-full bg-opacity-30">
+        <a href="index.html"><span class="text-purple text-xl">YOGA</span></a>
+    </div>
+
+    <div class="container">
+        <h2 class="text-green">Sign Up</h2>
+        
+        <form action="#" method="POST">  <!-- Replace "#" with actual server URL -->
+            <div class="input-container">
+                <input type="text" class="input-field" placeholder="Enter Name" name="name" required>
+            </div>
+            <div class="input-container">
+                <input type="email" class="input-field" placeholder="Enter Email" name="email" required>
+            </div>
+            <div class="input-container">
+                <input type="password" class="input-field" placeholder="Enter Password" name="password" required>
+            </div>
+            <button type="submit" class="button submit-button text-xl">Submit</button>
+        </form>
+    </div>
+</body>
+</html>

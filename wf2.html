@@ -1,0 +1,79 @@
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Yoga Page</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body, html {
+      width: 100%;
+      height: 100%;
+    }
+
+    .container {
+      position: relative;
+      width: 100%;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    .image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .label {
+      position: absolute;
+      background-color: rgba(229, 231, 235, 0.3); /* Low opacity */
+      border-radius: 50px;
+      padding: 0.8rem 2rem;
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #000;
+      text-align: center;
+      transition: 0.3s ease-in-out;
+    }
+
+    .label-yoga {
+      top: 2.5rem;
+      left: 2.5rem;
+      background-color: rgba(229, 231, 235, 0.5);
+    }
+
+    .label-explore {
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: rgba(255, 255, 255, 0.4);
+    }
+
+    .label-explore:hover {
+      background-color: rgba(255, 255, 255, 0.8); /* Darker on hover */
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img
+      alt="A woman with curly hair meditating in a park, sitting cross-legged on a blanket with trees and greenery in the background"
+      class="image" src="6.jpg" />
+    <div class="label label-yoga">
+      <a href="index.html">YOGA</a>
+    </div>
+    <div class="label label-explore">
+      <a href="index.html">Explore</a>
+    </div>
+  </div>
+</body>
+</html>
